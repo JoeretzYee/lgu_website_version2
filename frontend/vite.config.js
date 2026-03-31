@@ -5,6 +5,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [youwareVitePlugin(), react()],
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
