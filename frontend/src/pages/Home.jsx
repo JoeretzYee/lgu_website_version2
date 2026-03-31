@@ -6,6 +6,13 @@ import AnimatedSection, { StaggerItem } from "../components/AnimatedSection";
 import ParallaxBackground from "../components/ParallaxBackground";
 import WaveDivider from "../components/WaveDivider";
 import { StatsSection } from "../components/StatsCounter";
+import municipyo from "@/assets/images/municipyo.jpg";
+import heartOfTheValley from "@/assets/images/theheartofthevalley.jpg";
+import water_fountain from "@/assets/images/water_fountain.jpg";
+import simballay from "@/assets/images/simbalay.jpg";
+import thailand from "@/assets/images/mayor_thailand.png";
+import mayor from "@/assets/officials/mayor.jpg";
+
 import {
   staggerContainer,
   fadeInUp,
@@ -20,10 +27,9 @@ import { services } from "../data/services";
 
 const heroWords = ["Serbisyo", "Uban", "Sa", "Gugma"];
 const stats = [
-  { end: 125000, label: "Population", suffix: "+", icon: "👥" },
+  { end: 76339, label: "Population", suffix: "+", icon: "👥" },
   { end: 28, label: "Barangays", suffix: "", icon: "🏘️" },
-  { end: 48, label: "Active Projects", suffix: "+", icon: "🏗️" },
-  { end: 98, label: "Satisfaction Rate", suffix: "%", icon: "⭐" },
+  // { end: 48, label: "Active Projects", suffix: "+", icon: "🏗️" },
 ];
 
 const quickLinks = [
@@ -67,11 +73,64 @@ const quickLinks = [
 
 function HeroSection() {
   const [ref, mousePos] = useMouseParallax(0.015);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const heroImages = [
+    { src: municipyo, alt: "Municipyo" },
+    { src: heartOfTheValley, alt: "Nabunturan scenic view 2" },
+    { src: water_fountain, alt: "Nabunturan scenic view 3" },
+    { src: simballay, alt: "Nabunturan scenic view 3" },
+    { src: thailand, alt: "Nabunturan scenic view 3" },
+    // Add more images as needed
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 10000); // 3 seconds
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800" />
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800" /> */}
+      <div className="absolute inset-0">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentImageIndex}
+            className="absolute inset-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+          >
+            {/* Infinite Zoom Animation */}
+            <motion.div
+              className="w-full h-full"
+              initial={{ scale: 1.2 }}
+              animate={{ scale: 1 }}
+              transition={{
+                duration: 8,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "reverse", // This makes it zoom in and out infinitely
+              }}
+            >
+              <img
+                src={heroImages[currentImageIndex].src}
+                alt={heroImages[currentImageIndex].alt}
+                className="w-full h-full object-cover"
+                loading="eager"
+              />
+            </motion.div>
+
+            {/* Dark Overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/60" />
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
       {/* Animated Floating Elements */}
       <div
@@ -245,8 +304,8 @@ function MayorSection() {
             <div className="relative">
               <div className="relative w-full max-w-md mx-auto aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&crop=face"
-                  alt="Mayor Ricardo M. Santos"
+                  src={mayor}
+                  alt="Myrocel balili"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -564,7 +623,7 @@ function GreenInitiativeSection() {
 
           <AnimatedSection animation="fadeLeft" delay={0.2}>
             <span className="text-sm font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wider">
-              Greenfield 2030
+              Municipality of Nabunturan 2026
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-gray-900 dark:text-white">
               Our Environmental{" "}
@@ -572,10 +631,10 @@ function GreenInitiativeSection() {
             </h2>
             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>
-                Greenfield is at the forefront of environmental sustainability.
-                Our Greenfield 2030 plan aims to reduce carbon emissions by 50%,
-                achieve 100% solid waste diversion, and plant 1 million trees by
-                2030.
+                Municipality of Nabunturan is at the forefront of environmental
+                sustainability. Our municipality 2026 plan aims to reduce carbon
+                emissions by 50%, achieve 100% solid waste diversion, and plant
+                1 million trees by 2026.
               </p>
               <ul className="space-y-2">
                 {[
@@ -638,7 +697,7 @@ export default function Home() {
       <StatsBar />
       <NewsSection />
       <WaveDivider color="white" flip />
-      <GreenInitiativeSection />
+      {/* <GreenInitiativeSection /> */}
     </main>
   );
 }

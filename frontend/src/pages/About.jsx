@@ -110,7 +110,7 @@ function HistoryTimeline() {
             Our Journey
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 text-gray-900 dark:text-white">
-            History of Greenfield
+            History of Municipality of Nabunturan
           </h2>
         </AnimatedSection>
 
@@ -178,38 +178,43 @@ function OfficialsSection() {
             {officials.map((official) => (
               <StaggerItem key={official.id}>
                 <motion.div
-                  className="card dark:card-dark group text-center"
+                  className="group relative overflow-hidden rounded-2xl shadow-xl"
                   whileHover={{ y: -8, scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="relative mx-auto w-32 h-32 -mt-16 mb-4">
+                  {/* Background Image */}
+                  <div className="absolute inset-0">
                     <img
                       src={official.image}
                       alt={official.name}
-                      className="w-full h-full rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg group-hover:border-primary-300 transition-colors"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                     />
+                    {/* Dark Overlay for text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
                   </div>
-                  <div className="px-6 pb-6">
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+
+                  {/* Content */}
+                  <div className="relative p-6 pt-40 min-h-[400px] flex flex-col justify-end text-white text-center">
+                    <h3 className="text-xl font-bold mb-1 group-hover:text-primary-300 transition-colors">
                       {official.name}
                     </h3>
-                    <p className="text-sm text-primary-600 dark:text-primary-400 font-medium mb-2">
+                    <p className="text-sm text-primary-300 font-medium mb-2">
                       {official.position}
                     </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+                    {/* <p className="text-sm text-white/80 leading-relaxed mb-4 line-clamp-3">
                       {official.bio}
-                    </p>
-                    <div className="flex flex-wrap gap-1 justify-center">
+                    </p> */}
+                    {/* <div className="flex flex-wrap gap-1">
                       {official.achievements.slice(0, 2).map((a, i) => (
                         <span
                           key={i}
-                          className="text-xs px-2 py-1 bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-300 rounded-full"
+                          className="text-xs px-2 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full"
                         >
                           {a}
                         </span>
                       ))}
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
               </StaggerItem>

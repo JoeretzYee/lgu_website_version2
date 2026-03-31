@@ -47,10 +47,10 @@ const budgetData = [
 const documents = [
   {
     id: 1,
-    title: "Annual Budget 2025",
+    title: "Annual Budget 2026",
     type: "PDF",
     size: "2.4 MB",
-    date: "Jan 15, 2025",
+    date: "Jan 15, 2026",
     icon: "📊",
   },
   {
@@ -58,7 +58,7 @@ const documents = [
     title: "Statement of Receipts & Expenditures (SRE)",
     type: "PDF",
     size: "1.8 MB",
-    date: "Mar 10, 2025",
+    date: "Mar 10, 2026",
     icon: "💰",
   },
   {
@@ -66,15 +66,15 @@ const documents = [
     title: "Commission on Audit Report 2024",
     type: "PDF",
     size: "5.2 MB",
-    date: "Feb 28, 2025",
+    date: "Feb 28, 2026",
     icon: "📋",
   },
   {
     id: 4,
-    title: "Procurement Plans 2025",
+    title: "Procurement Plans 2026",
     type: "PDF",
     size: "3.1 MB",
-    date: "Jan 20, 2025",
+    date: "Jan 20, 2026",
     icon: "📦",
   },
   {
@@ -82,7 +82,7 @@ const documents = [
     title: "Full Disclosure Policy Documents",
     type: "ZIP",
     size: "12.5 MB",
-    date: "Mar 01, 2025",
+    date: "Mar 01, 2026",
     icon: "🔒",
   },
   {
@@ -98,7 +98,7 @@ const documents = [
     title: "Sangguniang Bayan Resolutions",
     type: "PDF",
     size: "800 KB",
-    date: "Mar 15, 2025",
+    date: "Mar 15, 2026",
     icon: "📜",
   },
   {
@@ -106,32 +106,32 @@ const documents = [
     title: "Local Revenue Collection Report",
     type: "XLS",
     size: "650 KB",
-    date: "Mar 18, 2025",
+    date: "Mar 18, 2026",
     icon: "📈",
   },
 ];
 
-const years = ["2025", "2024", "2023", "2022"];
+const years = ["2026", "2025", "2024", "2023"];
 const yearReports = {
-  2025: {
+  2026: {
     budget: "₱150M",
     collected: "₱142M",
     projects: 48,
     population: "125,000",
   },
-  2024: {
+  2025: {
     budget: "₱138M",
     collected: "₱131M",
     projects: 42,
     population: "122,000",
   },
-  2023: {
+  2024: {
     budget: "₱125M",
     collected: "₱120M",
     projects: 38,
     population: "119,500",
   },
-  2022: {
+  2023: {
     budget: "₱115M",
     collected: "₱108M",
     projects: 35,
@@ -150,7 +150,7 @@ function BudgetChart() {
             Financial Overview
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 text-gray-900 dark:text-white">
-            Budget Allocation 2025
+            Budget Allocation 2026
           </h2>
         </AnimatedSection>
 
@@ -303,7 +303,7 @@ function DocumentsSection() {
 }
 
 function YearlyReports() {
-  const [activeYear, setActiveYear] = useState("2025");
+  const [activeYear, setActiveYear] = useState("2026");
   const report = yearReports[activeYear];
 
   return (

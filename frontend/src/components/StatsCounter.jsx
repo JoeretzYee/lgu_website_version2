@@ -44,11 +44,11 @@ export default function StatsCounter({
       animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.5 }}
     >
-      {icon && <div className="text-3xl mb-2">{icon}</div>}
+      {icon && <div className="text-3xl  mb-2">{icon}</div>}
       <div className="text-3xl md:text-4xl font-bold text-primary-700 dark:text-primary-300 mb-1">
         {formatted}
       </div>
-      <div className="text-sm text-gray-500 dark:text-gray-400">{label}</div>
+      <div className="text-sm text-white dark:text-gray-400">{label}</div>
     </motion.div>
   );
 }
@@ -56,7 +56,7 @@ export default function StatsCounter({
 // Stats Section with multiple counters
 export function StatsSection({ stats }) {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 ">
+    <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8 ">
       {stats.map((stat, i) => (
         <motion.div
           key={stat.label}

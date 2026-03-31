@@ -319,14 +319,14 @@ function ServicesList({ category }) {
                     </AnimatePresence>
                   </div>
 
-                  <motion.button
+                  {/* <motion.button
                     onClick={() => setModalService(service)}
                     className="mt-4 w-full py-2.5 bg-primary-50 hover:bg-primary-100 dark:bg-primary-900/20 dark:hover:bg-primary-900/40 text-primary-700 dark:text-primary-300 font-medium text-sm rounded-xl transition-colors"
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
                   >
                     Request This Service
-                  </motion.button>
+                  </motion.button> */}
                 </div>
               </motion.div>
             </StaggerItem>

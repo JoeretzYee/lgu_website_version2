@@ -59,11 +59,7 @@ const contactInfo = [
       </svg>
     ),
     title: "Address",
-    details: [
-      "Municipal Hall, Rizal Street",
-      "Greenfield, Province 1234",
-      "Philippines",
-    ],
+    details: ["Purok 9, Barangay Poblacion, Nabunturan, Philippines, 8800"],
   },
   {
     icon: (
@@ -82,7 +78,7 @@ const contactInfo = [
       </svg>
     ),
     title: "Phone",
-    details: ["(02) 8888-1000", "+63 917 123 4567", "Mon-Fri 8AM-5PM"],
+    details: ["0946 246 1787", "Mon-Thurs 7AM-6PM"],
   },
   {
     icon: (
@@ -101,11 +97,7 @@ const contactInfo = [
       </svg>
     ),
     title: "Email",
-    details: [
-      "info@greenfield.gov.ph",
-      "support@greenfield.gov.ph",
-      "mayor@greenfield.gov.ph",
-    ],
+    details: ["informationofficenabunturan@gmail.com", "."],
   },
   {
     icon: (
@@ -125,9 +117,8 @@ const contactInfo = [
     ),
     title: "Office Hours",
     details: [
-      "Monday - Friday: 8:00 AM - 5:00 PM",
-      "Saturday: 8:00 AM - 12:00 PM",
-      "Sunday & Holidays: Closed",
+      "Monday - Thurs: 7:00AM - 6:00PM",
+      "Saturday,Sunday & Holidays: Closed",
     ],
   },
 ];
@@ -412,7 +403,7 @@ function ContactForm() {
                     Municipality of Nabunturan
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Rizal Street, Greenfield, Province 1234
+                    Purok 9, Barangay Poblacion, Nabunturan, Phillippines, 8800
                   </p>
                 </div>
               </div>

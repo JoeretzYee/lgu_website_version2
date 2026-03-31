@@ -8,6 +8,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import NewsDetail from "./pages/NewsDetail";
 import ScrollToTop from "./components/ScrollToTop";
 import PageLoader from "./components/PageLoader";
 import { ThemeProvider } from "./context/ThemeContext";
@@ -60,6 +61,7 @@ function AnimatedRoutes() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/news" element={<News />} />
+            <Route path="/news/:id" element={<NewsDetail />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/transparency" element={<Transparency />} />

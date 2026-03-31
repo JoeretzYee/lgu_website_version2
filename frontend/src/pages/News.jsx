@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection, { StaggerItem } from "../components/AnimatedSection";
 import ParallaxBackground from "../components/ParallaxBackground";
@@ -28,7 +29,7 @@ function HeroSection() {
           </h1>
           <p className="text-lg text-primary-100/80 max-w-2xl mx-auto">
             Keep up to date with the latest happenings, programs, and
-            announcements from Greenfield Municipality.
+            announcements from Nabunturan Municipality.
           </p>
         </motion.div>
       </div>
@@ -149,22 +150,24 @@ function NewsGrid({ activeCategory, searchQuery }) {
                         {item.excerpt}
                       </p>
                       <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
-                        <span className="text-sm font-medium text-primary-600 dark:text-primary-400 group-hover:underline flex items-center gap-1">
-                          Read more
-                          <svg
-                            className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9 5l7 7-7 7"
-                            />
-                          </svg>
-                        </span>
+                        <Link to={`/news/${item.id}`}>
+                          <span className="text-sm font-medium text-primary-600 dark:text-primary-400 group-hover:underline flex items-center gap-1">
+                            Read more
+                            <svg
+                              className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </span>
+                        </Link>
                       </div>
                     </div>
                   </motion.article>

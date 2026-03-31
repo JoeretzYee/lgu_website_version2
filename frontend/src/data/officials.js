@@ -1,12 +1,25 @@
+import mayor from "@/assets/officials/mayor.jpg";
+import reterba from "@/assets/officials/reterba.png";
+import rodel from "@/assets/officials/rodel.png";
+import roy from "@/assets/officials/roy.png";
+import humol from "@/assets/officials/humol.png";
+import coria from "@/assets/officials/coria.png";
+import ancla from "@/assets/officials/ancla.png";
+import bon from "@/assets/officials/bon.png";
+import alipan from "@/assets/officials/alipan.png";
+import caballero from "@/assets/officials/caballero.png";
+import markchan from "@/assets/officials/markchan.png";
+import masambo from "@/assets/officials/masambo.png";
+import dresel from "@/assets/officials/dresel.png";
+
 export const officials = [
   {
     id: 1,
-    name: "Hon. Myrocel G. Balili",
+    name: "Hon. Myrocel Clarin-Balili",
     position: "Municipal Mayor",
     term: "2022 - 2025",
     bio: "Mayor Santos has served Greenfield for over 20 years, championing sustainable development and community welfare programs.",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    image: mayor,
     contact: "mayor@greenfield.gov.ph",
     achievements: [
       "Established Greenfield 2030 Sustainability Plan",
@@ -16,12 +29,11 @@ export const officials = [
   },
   {
     id: 2,
-    name: "Vice Mayor Elena B. Cruz",
-    position: "Vice Mayor / Presiding Officer",
+    name: "Hon. Cyrian A. Reterba",
+    position: "Municipal Vice Mayor",
     term: "2022 - 2025",
     bio: "Vice Mayor Cruz leads the Municipal Council and advocates for transparent governance and youth development.",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+    image: reterba,
     contact: "vicemayor@greenfield.gov.ph",
     achievements: [
       "Authored the Greenfield Transparency Ordinance",
@@ -31,12 +43,11 @@ export const officials = [
   },
   {
     id: 3,
-    name: "Atty. Marco A. Reyes",
-    position: "Municipal Secretary",
+    name: "Hon. Rodel G. Balili",
+    position: "SB Member",
     term: "2022 - 2025",
     bio: "Atty. Reyes ensures efficient municipal operations and coordinates inter-departmental programs.",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    image: rodel,
     contact: "secretary@greenfield.gov.ph",
     achievements: [
       "Digitized 80% of municipal records",
@@ -45,12 +56,11 @@ export const officials = [
   },
   {
     id: 4,
-    name: "Dr. Maria L. Garcia",
-    position: "Municipal Health Officer",
+    name: "Hon. Roy D. Bayoneta",
+    position: "SB Member",
     term: "2022 - 2025",
     bio: "Dr. Garcia oversees all municipal health programs and manages the Greenfield Medical Center.",
-    image:
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+    image: roy,
     contact: "health@greenfield.gov.ph",
     achievements: [
       "Launched Mobile Health Clinic Program",
@@ -60,12 +70,11 @@ export const officials = [
   },
   {
     id: 5,
-    name: "Engr. Pedro R. Lim",
-    position: "Municipal Engineer",
+    name: "Hon. Ivi Sarah M. Humol",
+    position: "SB Member",
     term: "2022 - 2025",
     bio: "Engr. Lim manages all infrastructure projects and ensures quality construction standards.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+    image: humol,
     contact: "engineer@greenfield.gov.ph",
     achievements: [
       "Completed 15 road rehabilitation projects",
@@ -75,12 +84,102 @@ export const officials = [
   },
   {
     id: 6,
-    name: "Ms. Ana T. Mendoza",
-    position: "Municipal Treasurer",
+    name: "Hon. Evelyn M. Corea",
+    position: "SB Member",
     term: "2022 - 2025",
     bio: "Ms. Mendoza manages municipal finances and ensures transparent fiscal operations.",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+    image: coria,
+    contact: "treasurer@greenfield.gov.ph",
+    achievements: [
+      "Increased local revenue by 25%",
+      "Achieved 3 consecutive unqualified audit opinions",
+    ],
+  },
+  {
+    id: 7,
+    name: "Hon. Carlo D. Ancla",
+    position: "SB Member",
+    term: "2022 - 2025",
+    bio: "Ms. Mendoza manages municipal finances and ensures transparent fiscal operations.",
+    image: ancla,
+    contact: "treasurer@greenfield.gov.ph",
+    achievements: [
+      "Increased local revenue by 25%",
+      "Achieved 3 consecutive unqualified audit opinions",
+    ],
+  },
+  {
+    id: 8,
+    name: "Hon. Glenn F. Arangcon",
+    position: "SB Member",
+    term: "2022 - 2025",
+    bio: "Ms. Mendoza manages municipal finances and ensures transparent fiscal operations.",
+    image: bon,
+    contact: "treasurer@greenfield.gov.ph",
+    achievements: [
+      "Increased local revenue by 25%",
+      "Achieved 3 consecutive unqualified audit opinions",
+    ],
+  },
+  {
+    id: 9,
+    name: "Hon. Franklin F. Alipan",
+    position: "SB Member",
+    term: "2022 - 2025",
+    bio: "Ms. Mendoza manages municipal finances and ensures transparent fiscal operations.",
+    image: alipan,
+    contact: "treasurer@greenfield.gov.ph",
+    achievements: [
+      "Increased local revenue by 25%",
+      "Achieved 3 consecutive unqualified audit opinions",
+    ],
+  },
+  {
+    id: 10,
+    name: "Hon. Raul B. Caballero",
+    position: "SB Member",
+    term: "2022 - 2025",
+    bio: "Ms. Mendoza manages municipal finances and ensures transparent fiscal operations.",
+    image: caballero,
+    contact: "treasurer@greenfield.gov.ph",
+    achievements: [
+      "Increased local revenue by 25%",
+      "Achieved 3 consecutive unqualified audit opinions",
+    ],
+  },
+  {
+    id: 11,
+    name: "Hon. Mark Anthony O. Chan",
+    position: "SB Member/ABC",
+    term: "2022 - 2025",
+    bio: "Ms. Mendoza manages municipal finances and ensures transparent fiscal operations.",
+    image: markchan,
+    contact: "treasurer@greenfield.gov.ph",
+    achievements: [
+      "Increased local revenue by 25%",
+      "Achieved 3 consecutive unqualified audit opinions",
+    ],
+  },
+  {
+    id: 12,
+    name: "Hon. Felipe B. Masambo",
+    position: "SB Member/IPMR",
+    term: "2022 - 2025",
+    bio: "Ms. Mendoza manages municipal finances and ensures transparent fiscal operations.",
+    image: masambo,
+    contact: "treasurer@greenfield.gov.ph",
+    achievements: [
+      "Increased local revenue by 25%",
+      "Achieved 3 consecutive unqualified audit opinions",
+    ],
+  },
+  {
+    id: 13,
+    name: "Hon. Dresel F. Refamonte",
+    position: "SB Member/SKMF",
+    term: "2022 - 2025",
+    bio: "Ms. Mendoza manages municipal finances and ensures transparent fiscal operations.",
+    image: dresel,
     contact: "treasurer@greenfield.gov.ph",
     achievements: [
       "Increased local revenue by 25%",
@@ -96,113 +195,127 @@ export const departments = [
     head: "Hon. Myrocel G. Balili",
     phone: "0938-031-2014",
     email: "info@gmail.com",
-    floor: "Office of the Mayor",
+    floor: "Municipal Building Office of the Mayor",
   },
   {
     id: 2,
-    name: "Municipal Health Office",
-    head: "Dr. Maria L. Garcia",
-    phone: "(02) 8888-1002",
-    email: "health@greenfield.gov.ph",
-    floor: "Ground Floor, Municipal Hall",
+    name: "Nabunturan Emergency Response Team",
+    head: "Ipin",
+    phone: "09462461787/09171303345",
+    email: "n/a",
+    floor: "Purok 15 Poblacion Nabunturan",
   },
   {
     id: 3,
-    name: "Engineering Office",
-    head: "Engr. Pedro R. Lim",
-    phone: "(02) 8888-1003",
-    email: "engineer@greenfield.gov.ph",
-    floor: "3rd Floor, Municipal Hall",
+    name: "Nabunturan Fire Station",
+    head: ".",
+    phone: "09127108980",
+    email: ".",
+    floor: "Outside Municipal Building beside Court Hall",
   },
   {
     id: 4,
-    name: "Social Welfare & Development",
-    head: "Ms. Rosa D. Aquino",
-    phone: "(02) 8888-1004",
-    email: "swd@greenfield.gov.ph",
-    floor: "Ground Floor, Municipal Hall",
+    name: "Human Resource",
+    head: "Mayet",
+    phone: "09169672108",
+    email: ".",
+    floor: "Municipal Building",
   },
   {
     id: 5,
-    name: "Municipal Treasurer",
-    head: "Ms. Ana T. Mendoza",
-    phone: "(02) 8888-1005",
-    email: "treasurer@greenfield.gov.ph",
-    floor: "1st Floor, Municipal Hall",
+    name: "MSWDO",
+    head: "Zaira Khrisna B. Tayabas, RSW",
+    phone: "09612126143",
+    email: ".",
+    floor: "Municipal Building",
   },
   {
     id: 6,
-    name: "Assessor's Office",
-    head: "Mr. Jose B. Villanueva",
-    phone: "(02) 8888-1006",
-    email: "assessor@greenfield.gov.ph",
-    floor: "1st Floor, Municipal Hall",
+    name: "Engineering Office",
+    head: "Eng. Beloy",
+    phone: "09383778868",
+    email: ".",
+    floor: "Beside DPWH",
   },
   {
     id: 7,
-    name: "Environment & Natural Resources",
-    head: "Ms. Linda C. Fernandez",
-    phone: "(02) 8888-1007",
-    email: "enro@greenfield.gov.ph",
-    floor: "2nd Floor, Municipal Hall",
+    name: "SB Office",
+    head: ".",
+    phone: "09296679080",
+    email: ".",
+    floor: "Municipal Building",
   },
   {
     id: 8,
-    name: "Planning & Development",
-    head: "Arch. Daniel S. Ramos",
-    phone: "(02) 8888-1008",
-    email: "mpdo@greenfield.gov.ph",
-    floor: "3rd Floor, Municipal Hall",
+    name: "Civil Registrar",
+    head: "Anivec Quezon",
+    phone: "09171601351/09171477409",
+    email: ".",
+    floor: "Municipal Building",
   },
   {
     id: 9,
-    name: "Nabunturan Emergency Response Team",
-    head: "Arch. Daniel S. Ramos",
-    phone: "0946-246-1787 / 0917-130-3345",
-    email: "mpdo@greenfield.gov.ph",
-    floor: "Nert Station",
+    name: "Municipal Planning and Development Office",
+    head: "John",
+    phone: "09632386639",
+    email: ".",
+    floor: "Municipal Building 2nd Floor",
   },
   {
     id: 10,
-    name: "Nabunturan Fire Station",
-    head: "Arch. Daniel S. Ramos",
-    phone: "0912-710-8980",
-    email: "mpdo@greenfield.gov.ph",
-    floor: "Nert Station",
+    name: "Nabunturan Police Station",
+    head: ".",
+    phone: "09072056499",
+    email: ".",
+    floor: "Police Station Beside Municipal Building",
   },
 ];
 
 export const timeline = [
   {
+    year: "Pre0-1900s",
+    event:
+      "Area inhabited by indigenous groups such as the Mansaka, practicing traditional agriculture and culture.",
+  },
+  {
+    year: "1938",
+    event:
+      "Construction of a major road opened the area to settlers and economic activity.",
+  },
+  {
+    year: "1941-1945 (World War II)",
+    event:
+      "Served as a guerrilla base, later occupied by japanese forces as a military garrison.",
+  },
+  {
     year: "1945",
     event:
-      "Greenfield was established as an independent municipality after World War II.",
+      "Liberation of the area and return to civilian governance after the war.",
   },
   {
-    year: "1960",
-    event: "Construction of the first Municipal Hall was completed.",
+    year: "1957",
+    event:
+      "Officially created as as municipality through Republic Act No. 2038, separating from Compostela.",
   },
   {
-    year: "1975",
-    event: "Greenfield was recognized as a first-class municipality.",
-  },
-  { year: "1990", event: "Launch of the first comprehensive land use plan." },
-  {
-    year: "2000",
-    event: "Computerization of municipal government services began.",
+    year: "1960s-1980s",
+    event:
+      "Rapid Population growth due to migration; agriculture and small-scale mining expanded.",
   },
   {
-    year: "2010",
-    event: "Greenfield received the Seal of Good Local Governance.",
-  },
-  { year: "2015", event: "Launch of the Greenfield 2030 Sustainability Plan." },
-  {
-    year: "2020",
-    event: "Digital transformation of all municipal services completed.",
+    year: "1998",
+    event:
+      "Became the capital of the newly created province of Davao De Oro (formerly Compostela Valley).",
   },
   {
-    year: "2025",
-    event: "Greenfield recognized as the Cleanest LGU in the nation.",
+    year: "2019",
+    event:
+      "Province officially renamed from Compostela Valley to Davao De Oro; Nabunturan remained the capital.",
+  },
+  {
+    year: "2026",
+    event:
+      "Today, Municipality of Nabunturan serves as the political adn administrative center of Davao De Oro, continuing to grow as a hub for governance,trade, and culture.",
   },
 ];
 
